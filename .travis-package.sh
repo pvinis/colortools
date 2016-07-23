@@ -1,1 +1,1 @@
-zip -j colortools.zip scripts/*
+zip -j colortools-${TRAVIS_TAG#v}.zip scripts/*
