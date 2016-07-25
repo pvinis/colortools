@@ -2,6 +2,9 @@
 
 A list of shell scripts to print system colors and true colors in the terminal. Every time I looked for one of these scripts, I ended up finding another one, spending more time than I wanted. Now we have them all in one place. Like many other tools on the terminal, these scripts are not useful to everyone, but are really useful to some. Enjoy :)
 
+## Install
+	$ brew install pvinis/pvinis/colortools
+
 ## List of tools
 
 - **ct-true**  
