@@ -5,6 +5,10 @@ A list of shell scripts to print system colors and true colors in the terminal. 
 ## Install
 	$ brew install pvinis/pvinis/colortools
 
+## Usage
+	$ colortools
+	$ colortools-256
+
 ## List of tools
 
 - **colortools-true**  

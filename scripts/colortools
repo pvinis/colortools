@@ -1,0 +1,24 @@
+#!/bin/bash --
+
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+echo "${bold}"
+echo "colortools"
+echo "${normal}"
+echo "A list of shell scripts to print system colors and true colors in the terminal."
+echo "github.com/pvinis/colortools"
+echo "Enjoy :)"
+
+echo "${bold}"
+echo "List of scripts"
+
+echo "${normal}"
+echo "colortools-true         : Prints TRUECOLOR using a nice dark red true color."
+echo "colortools-truezigzag   : Prints /\/\/\/\/ using true colors."
+echo "colortools-truebar      : Prints colorbars using true colors."
+echo "colortools-system-gyw   : Prints system colors, with normal and bold gYW text."
+echo "colortools-system       : Prints system colors, with normal and bold text."
+echo "colortools-system-blink : Prints system colors, with normal, bold and blinking text."
+echo "colortools-256          : Prints system colors, grayscale ramps and several color cubes using 256 colors."
+echo "${normal}"
