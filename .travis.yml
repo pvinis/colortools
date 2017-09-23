@@ -2,15 +2,15 @@ language: generic
 sudo: false
 
 before_install:
-  - chmod +x ./.travis-package.sh
+- chmod +x ./.travis-package.sh
 
 script:
-  - ./.travis-package.sh
+- "./.travis-package.sh"
 
 deploy:
   provider: releases
   api_key:
-    secure: r4nVARB0vP4wDN5TnSol+PYjd1Xl/cHS+GnygQpi6bcpJqnnv7lUt8CqR08qZkkKItninKkHPPKOn/GMFCFCLpzW1o5UIFjQEGeGeAecpCWeYgYjz6GZwK/qAxP9g3DZ8cNIcd8EweV6YZ3TLUxyBNCG8dqRhkLTO/aMphh8iZoz4eDOq8/brOOq3KnDVDODU3/9cgc3CsB+RYgsqMVNOQBFDnMG1RqWi0xSZ5zQeoVejkzvBfzsT+ZR82AXDQ9Wyfr17c7yAMm+Mf0z1+prfJCWorDzMXLxgQMjRaautV/3xYytLCwL28c1u4D4BhROn4T0bV6Id1FgD1PUjr5Cn6nEdyByqK2F9j6Y46ZlhYYT8hUNi+mbU5pUaf4lHljv/K47sporDbs9+NnbvzDNs0H0EJ/rYp0row1PIEEdHpzpdajjpH22sjUwx720jozC3yk7TuW3K/APg/pz+iDY7u0n3koYJ1VUCCIWtemGmYaYV5t6B0fH8e5VBrpLoeas42EMvEGzQG7Ji7UnWWhz56sxPDgSOy+XC4JGN3EIoKlhAke9KrOecBmb6OtTVYGqyr3YWvoPYJHmgHYm2iw6CSjLOOJFP9fgkObCI2OjMEu4aLkgveaKTBaVOpjP0QrTOGU+Y/2hr63xIunE9t6ufmSYS9nlGemTkuCFuPBqZSs=
+    secure: XX48jSZ/AChWwC+V4ONiOxGGdOxmhDtFsjuexAVMXp2NUOmCzCa135OIR/OgxYIKMg/JVhmQ28rh1qoKtpaIT28g9VmRC65ZG8G/yI5PasTSBozImB1sCTM7kHKmcxQJKoA1Nhc58Ok2T/5azGelKddY8hZf1/7EbrkhPO2Bu/UCOZyXId2Xt0LGdMb0gSbyVesGmGOvyOWUCoaqyQ91pLCbfH6drtxHZCG7i33BwVYQU0yQil6463Up9bEEIM25A9H62xQC5T+9DOWMwsJGYMHlNh1Kt41LNodthuTzgRyfwOGrW4FcrylXHvMpW9vfneTqUlI7YR3/6NgpcOEwA/YO1G5m5klT7zPk8SNB8e4oDGOZu52DK+cl62Xbg/wuhZcN27hfNFdQ+YQLuvjtifIr1e4F+YV/iZ97US+orVqG9KbznBwPXB0fbkKmKlCeVsiKHZ19qb6TMnSqCf9kxkWXMxwejbZ+wVPp2FeAsKXEAiR0MxenmncxVV7vq05WsxoY6w4JmGC11QVqNVrFRAG0ZEFcyELj9PYMiAvhk4AwxjSXYTy7sJXCu+PrmjooLwtmCNHY3YWCRrOefTqyIb1quY605L42MpR5kvkvJSShnO9RL5jwhVx2k19X3eaDL5KojdifUNZHqhcLVaEUsplSYlptE6IP9jDv+3zb8+o=
   file: colortools-${TRAVIS_TAG#v}.zip
   skip_cleanup: true
   on:
